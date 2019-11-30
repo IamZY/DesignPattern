@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="70.5" y="81.0">com.ntuzy.uml.dependence.PersonServiceBean</node>
+    <node x="245.0" y="0.0">com.ntuzy.uml.dependence.PersonDao</node>
+    <node x="137.0" y="0.0">com.ntuzy.uml.dependence.Person</node>
+    <node x="377.0" y="0.0">com.ntuzy.uml.dependence.IDCard</node>
+    <node x="0.0" y="0.0">com.ntuzy.uml.dependence.Department</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.ntuzy.uml.dependence.PersonServiceBean" target="com.ntuzy.uml.dependence.Person">
+      <point x="0.0" y="-50.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.ntuzy.uml.dependence.PersonServiceBean" target="com.ntuzy.uml.dependence.PersonDao">
+      <point x="44.19999999999999" y="-50.0" />
+      <point x="225.2" y="51.0" />
+      <point x="301.0" y="51.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.ntuzy.uml.dependence.PersonServiceBean" target="com.ntuzy.uml.dependence.IDCard">
+      <point x="88.39999999999998" y="-50.0" />
+      <point x="269.4" y="61.0" />
+      <point x="421.5" y="61.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.ntuzy.uml.dependence.PersonServiceBean" target="com.ntuzy.uml.dependence.Department">
+      <point x="-88.39999999999998" y="-50.0" />
+      <point x="92.60000000000002" y="61.0" />
+      <point x="29.25" y="61.0" />
+      <point x="-29.25" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="2.1000000000000005" x="409.8809523809525" y="137.23809523809507" />
+  <SelectedNodes>
+    <node>com.ntuzy.uml.dependence.IDCard</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

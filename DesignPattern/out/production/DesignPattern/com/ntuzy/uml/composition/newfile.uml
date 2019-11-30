@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="250.0">com.ntuzy.uml.composition.IDCard</node>
+    <node x="57.16666666666668" y="331.0">com.ntuzy.uml.composition.Person</node>
+    <node x="114.5" y="0.0">com.ntuzy.uml.composition.Moniter</node>
+    <node x="109.0" y="250.0">com.ntuzy.uml.composition.Head</node>
+    <node x="0.0" y="81.0">com.ntuzy.uml.composition.Computer</node>
+    <node x="6.5" y="0.0">com.ntuzy.uml.composition.Mouse</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.ntuzy.uml.composition.Computer" target="com.ntuzy.uml.composition.Mouse">
+      <point x="-53.0" y="-62.0" />
+      <point x="53.0" y="56.0" />
+      <point x="50.5" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.ntuzy.uml.composition.Computer" target="com.ntuzy.uml.composition.Moniter">
+      <point x="53.0" y="-62.0" />
+      <point x="159.0" y="56.0" />
+      <point x="161.5" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.ntuzy.uml.composition.Person" target="com.ntuzy.uml.composition.IDCard">
+      <point x="-45.66666666666666" y="-38.5" />
+      <point x="80.00000000000003" y="306.0" />
+      <point x="44.5" y="306.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.ntuzy.uml.composition.Person" target="com.ntuzy.uml.composition.Head">
+      <point x="45.66666666666666" y="-38.5" />
+      <point x="171.33333333333334" y="306.0" />
+      <point x="168.25" y="306.0" />
+      <point x="19.75" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="0.0" />
+  <SelectedNodes>
+    <node>com.ntuzy.uml.composition.Head</node>
+    <node>com.ntuzy.uml.composition.Computer</node>
+    <node>com.ntuzy.uml.composition.IDCard</node>
+    <node>com.ntuzy.uml.composition.Person</node>
+    <node>com.ntuzy.uml.composition.Mouse</node>
+    <node>com.ntuzy.uml.composition.Moniter</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

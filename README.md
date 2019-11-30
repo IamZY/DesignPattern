@@ -232,7 +232,291 @@ p13
 
 依赖、泛化（继承）、实现、关联、聚合与组合
 
+# 设计模式
 
+- 创建型模式
+
+- 结构型模式
+
+- 行为型模式
+
+## 单例模式
+
+采取一定的方法保证整个软件系统中对某个类只能存在一个对象实例，并且该类只提供一个取得其对象实例的方法。
+
+需要频繁使用和销毁对象
+
+创建对象耗时
+
+工具类对象
+
+频繁使用数据库或者文件的对象
+
+### 饿汉式
+
++ 构造器私有化
+
++ 类的内部创建对象
+
++ 向外暴露一个静态的公共方法
+
+  ```java
+  package com.ntuzy.singleton.type1;
+  
+  public class SingletonTest01 {
+      public static void main(String[] args){
+          Singleton singleton1 = Singleton.getInstance();
+          Singleton singleton2 = Singleton.getInstance();
+          System.out.println(singleton1 == singleton2);
+          System.out.println(singleton1.hashCode());
+          System.out.println(singleton2.hashCode());
+      }
+  }
+  
+  class Singleton {
+      // 构造器私有化
+      private Singleton() {
+  
+      }
+  
+      // 奔雷内部创建对象实例
+      private final static Singleton instance = new Singleton();
+  
+      public static Singleton getInstance() {
+          return instance;
+      }
+  }
+  ```
+
+  ```java
+  package com.ntuzy.singleton.type2;
+  
+  public class SingletonTest02 {
+  
+      public static void main(String[] args) {
+          Singleton singleton1 = Singleton.getInstance();
+          Singleton singleton2 = Singleton.getInstance();
+          System.out.println(singleton1 == singleton2);
+          System.out.println(singleton1.hashCode());
+          System.out.println(singleton2.hashCode());
+      }
+  
+  }
+  
+  class Singleton {
+      // 构造器私有化
+      private Singleton() {
+      }
+  
+      static {
+          // 在静态代码块中创建单例对象
+          instance = new Singleton();
+      }
+  
+  
+      // 奔雷内部创建对象实例
+      private static Singleton instance;
+  
+      public static Singleton getInstance() {
+          return instance;
+      }
+  
+      //
+  }
+  ```
+
+### 懒汉式
+
+```java
+package com.ntuzy.singleton.type3;
+
+/**
+ * 线程不安全
+ * 但是只能在单线程的状态下使用
+ * 在实际开发中不能使用
+ */
+public class SingletonTest03 {
+    public static void main(String[] args) {
+        Singleton singleton1 = Singleton.getInstance();
+        Singleton singleton2 = Singleton.getInstance();
+        System.out.println(singleton1 == singleton2);
+        System.out.println(singleton1.hashCode());
+        System.out.println(singleton2.hashCode());
+    }
+}
+
+
+class Singleton {
+    private Singleton() {
+
+    }
+
+    private static Singleton instance;
+
+
+    // 提供一个静态的共有方法 当使用到该方法的时候 才去创建instance
+    public static Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+
+        return instance;
+    }
+
+}
+```
+
+```java
+package com.ntuzy.singleton.type4;
+
+/**
+ * 不推荐 效率低
+ */
+public class SingletonTest04 {
+    public static void main(String[] args) {
+        Singleton singleton1 = Singleton.getInstance();
+        Singleton singleton2 = Singleton.getInstance();
+        System.out.println(singleton1 == singleton2);
+        System.out.println(singleton1.hashCode());
+        System.out.println(singleton2.hashCode());
+    }
+}
+
+
+class Singleton {
+    private Singleton() {
+
+    }
+
+    private static Singleton instance;
+
+
+    // 提供一个静态的共有方法 当使用到该方法的时候 才去创建instance
+    // 加入同步处理的代码块 解决线程安全问题
+    public static synchronized Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+
+        return instance;
+    }
+
+}
+```
+
+### 双重检查
+
+```java
+package com.ntuzy.singleton.type6;
+
+/**
+ * 双重检查 推荐
+ */
+public class SingletonTest06 {
+    public static void main(String[] args) {
+        Singleton singleton1 = Singleton.getInstance();
+        Singleton singleton2 = Singleton.getInstance();
+        System.out.println(singleton1 == singleton2);
+        System.out.println(singleton1.hashCode());
+        System.out.println(singleton2.hashCode());
+    }
+}
+
+class Singleton {
+    private Singleton() {
+
+    }
+
+    private volatile static Singleton instance;
+
+    // 加入双重检查的代码块 解决线程安全问题 解决懒加载的问题
+    public static synchronized Singleton getInstance() {
+        if (instance == null) {
+            synchronized (Singleton.class) {
+                if (instance == null) {
+                    instance = new Singleton();
+                }
+            }
+        }
+
+        return instance;
+    }
+
+}
+```
+
+### 静态内部类
+
+```java
+package com.ntuzy.singleton.type7;
+
+import java.security.PrivateKey;
+
+/**
+ * 静态内部类 推荐
+ * 保证类装载机制来保证初始化实例的时候只有一个线程
+ * 静态内部类方式在Singleton类被装载是并不会立即实例化  类的静态属性只会在第一次加载类的是红初始化 JVM帮助我们保证线程安全
+ */
+public class SingletonTest07 {
+    public static void main(String[] args) {
+        Singleton singleton1 = Singleton.getInstance();
+        Singleton singleton2 = Singleton.getInstance();
+        System.out.println(singleton1 == singleton2);
+        System.out.println(singleton1.hashCode());
+        System.out.println(singleton2.hashCode());
+    }
+
+}
+
+
+class Singleton {
+    private Singleton() {
+
+    }
+
+    // 静态内部类 该类中有静态属性SingletonInstance
+    private static class SingletonInstance {
+        private static final Singleton INSTANCE = new Singleton();
+    }
+
+    // 提供静态的共有方法 直接返回SingletonInstance.INSTANCE
+    public static Singleton getInstance() {
+        return SingletonInstance.INSTANCE;
+    }
+}
+```
+
+### 枚举
+
+不仅避免多线程 还可以禁止反序列化
+
+```java
+package com.ntuzy.singleton.type8;
+
+/*
+* 推荐
+*/
+public class SingletonTest08 {
+    public static void main(String[] args) {
+        Singleton instance1 = Singleton.INSTANCE;
+        Singleton instance2 = Singleton.INSTANCE;
+        System.out.println(instance1 == instance2);
+        System.out.println(instance1.hashCode());
+        System.out.println(instance2.hashCode());
+
+        instance1.sayOK();
+
+    }
+}
+
+enum Singleton {
+    INSTANCE;
+
+    public void sayOK() {
+        System.out.println("ok");
+    }
+}
+```
 
 
 
