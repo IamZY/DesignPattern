@@ -12,74 +12,197 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Liskov.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/principle/liskov/Liskov.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="904">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-              <folding>
-                <element signature="e#558#559#0" expanded="true" />
-                <element signature="e#583#584#0" expanded="true" />
-              </folding>
+      <file leaf-file-name="newfile.uml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/generalization/newfile.uml">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement />
+              <nodes>
+                <node x="0.0" y="81.0">com.ntuzy.uml.generalization.PersonServiceBean</node>
+                <node x="19.5" y="0.0">com.ntuzy.uml.generalization.DaoSupport</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="com.ntuzy.uml.generalization.PersonServiceBean" target="com.ntuzy.uml.generalization.DaoSupport">
+                  <point x="0.0" y="-15.5" />
+                  <point x="0.0" y="15.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="-866.5" y="-385.0" />
+              <SelectedNodes />
+              <Categories />
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Liskov.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/principle/liskov/improve/Liskov.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="904">
-              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-              <folding>
-                <element signature="e#767#768#0" expanded="true" />
-                <element signature="e#792#793#0" expanded="true" />
-                <element signature="e#960#961#0" expanded="true" />
-                <element signature="e#979#980#0" expanded="true" />
-                <element signature="e#1014#1015#0" expanded="true" />
-                <element signature="e#1043#1044#0" expanded="true" />
-              </folding>
+      <file leaf-file-name="PersonService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/implementation/PersonService.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="newfile.uml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/implementation/newfile.uml">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement />
+              <nodes>
+                <node x="0.0" y="104.0">com.ntuzy.uml.implementation.PersonServiceBean</node>
+                <node x="0.0" y="0.0">com.ntuzy.uml.implementation.PersonService</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="com.ntuzy.uml.implementation.PersonServiceBean" target="com.ntuzy.uml.implementation.PersonService">
+                  <point x="0.0" y="-27.0" />
+                  <point x="0.0" y="27.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="-866.5" y="-385.0" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Methods</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ocp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/principle/ocp/Ocp.java">
+      <file leaf-file-name="Computer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/aggregation/Computer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="904">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
-              <folding>
-                <element signature="e#586#587#0" expanded="true" />
-                <element signature="e#621#622#0" expanded="true" />
-                <element signature="e#665#666#0" expanded="true" />
-                <element signature="e#700#701#0" expanded="true" />
-                <element signature="e#747#748#0" expanded="true" />
-                <element signature="e#783#784#0" expanded="true" />
-                <element signature="e#875#876#0" expanded="true" />
-                <element signature="e#898#899#0" expanded="true" />
-                <element signature="e#942#943#0" expanded="true" />
-                <element signature="e#965#966#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="216">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ocp.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/principle/ocp/improve/Ocp.java">
+      <file leaf-file-name="Mouse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/aggregation/Mouse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="58" column="25" lean-forward="true" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
-              <folding>
-                <element signature="e#450#451#0" expanded="true" />
-                <element signature="e#465#466#0" expanded="true" />
-                <element signature="e#605#606#0" expanded="true" />
-                <element signature="e#628#629#0" expanded="true" />
-                <element signature="e#778#779#0" expanded="true" />
-                <element signature="e#801#802#0" expanded="true" />
-                <element signature="e#963#964#0" expanded="true" />
-                <element signature="e#986#987#0" expanded="true" />
-                <element signature="e#1157#1158#0" expanded="true" />
-                <element signature="e#1180#1181#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="48">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Moniter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/aggregation/Moniter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="enwfile.uml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/aggregation/enwfile.uml">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement />
+              <nodes>
+                <node x="118.25" y="0.0">com.ntuzy.uml.aggregation.Mouse</node>
+                <node x="0.0" y="81.0">com.ntuzy.uml.aggregation.Computer</node>
+                <node x="4.25" y="0.0">com.ntuzy.uml.aggregation.Moniter</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="com.ntuzy.uml.aggregation.Computer" target="com.ntuzy.uml.aggregation.Mouse">
+                  <point x="79.5" y="-62.0" />
+                  <point x="185.5" y="56.0" />
+                  <point x="184.25" y="56.0" />
+                  <point x="22.0" y="15.5" />
+                </edge>
+                <edge source="com.ntuzy.uml.aggregation.Computer" target="com.ntuzy.uml.aggregation.Moniter">
+                  <point x="-26.5" y="-62.0" />
+                  <point x="79.5" y="56.0" />
+                  <point x="74.75" y="56.0" />
+                  <point x="23.5" y="15.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="-866.5" y="-385.0" />
+              <SelectedNodes>
+                <node>com.ntuzy.uml.aggregation.Mouse</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Methods</Category>
+                <Category>Fields</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Computer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/composition/Computer.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="newfile.uml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/composition/newfile.uml">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement />
+              <nodes>
+                <node x="105.16666666666669" y="250.0">com.ntuzy.uml.composition.IDCard</node>
+                <node x="0.0" y="331.0">com.ntuzy.uml.composition.Person</node>
+                <node x="11.833333333333343" y="0.0">com.ntuzy.uml.composition.Moniter</node>
+                <node x="6.166666666666686" y="250.0">com.ntuzy.uml.composition.Head</node>
+                <node x="8.333333333333343" y="81.0">com.ntuzy.uml.composition.Computer</node>
+                <node x="125.83333333333334" y="0.0">com.ntuzy.uml.composition.Mouse</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="com.ntuzy.uml.composition.Computer" target="com.ntuzy.uml.composition.Mouse">
+                  <point x="53.0" y="-62.0" />
+                  <point x="167.33333333333334" y="56.0" />
+                  <point x="169.83333333333334" y="56.0" />
+                  <point x="0.0" y="15.5" />
+                </edge>
+                <edge source="com.ntuzy.uml.composition.Computer" target="com.ntuzy.uml.composition.Moniter">
+                  <point x="-53.0" y="-62.0" />
+                  <point x="61.33333333333334" y="56.0" />
+                  <point x="58.83333333333334" y="56.0" />
+                  <point x="0.0" y="15.5" />
+                </edge>
+                <edge source="com.ntuzy.uml.composition.Person" target="com.ntuzy.uml.composition.IDCard">
+                  <point x="45.66666666666666" y="-38.5" />
+                  <point x="114.16666666666666" y="306.0" />
+                  <point x="149.66666666666669" y="306.0" />
+                  <point x="0.0" y="15.5" />
+                </edge>
+                <edge source="com.ntuzy.uml.composition.Person" target="com.ntuzy.uml.composition.Head">
+                  <point x="-45.66666666666666" y="-38.5" />
+                  <point x="22.833333333333343" y="306.0" />
+                  <point x="25.916666666666686" y="306.0" />
+                  <point x="-19.75" y="15.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="-866.5" y="-385.0" />
+              <SelectedNodes>
+                <node>com.ntuzy.uml.composition.Person</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Methods</Category>
+                <Category>Fields</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Person.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/composition/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -110,6 +233,15 @@
         <option value="$PROJECT_DIR$/src/com/ntuzy/principle/liskov/improve/Liskov.java" />
         <option value="$PROJECT_DIR$/src/com/ntuzy/principle/ocp/Ocp.java" />
         <option value="$PROJECT_DIR$/src/com/ntuzy/principle/ocp/improve/Ocp.java" />
+        <option value="$PROJECT_DIR$/src/com/ntuzy/principle/demeter/Demeter1.java" />
+        <option value="$PROJECT_DIR$/src/com/ntuzy/principle/demeter/improve/Demeter1.java" />
+        <option value="$PROJECT_DIR$/src/com/ntuzy/uml/Person.java" />
+        <option value="$PROJECT_DIR$/src/com/ntuzy/uml/dependence/Department.java" />
+        <option value="$PROJECT_DIR$/src/com/ntuzy/uml/generalization/PersonServiceBean.java" />
+        <option value="$PROJECT_DIR$/src/com/ntuzy/uml/implementation/PersonService.java" />
+        <option value="$PROJECT_DIR$/src/com/ntuzy/uml/aggregation/Computer.java" />
+        <option value="$PROJECT_DIR$/src/com/ntuzy/uml/composition/Computer.java" />
+        <option value="$PROJECT_DIR$/src/com/ntuzy/uml/composition/Person.java" />
       </list>
     </option>
   </component>
@@ -122,9 +254,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="488" />
-    <option name="y" value="231" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="473" />
+    <option name="y" value="108" />
     <option name="width" value="1940" />
     <option name="height" value="1100" />
   </component>
@@ -133,6 +265,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -149,59 +282,27 @@
               <item name="DesignPattern" type="b2602c69:ProjectViewProjectNode" />
               <item name="DesignPattern" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="principle" type="462c0819:PsiDirectoryNode" />
+              <item name="ntuzy" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DesignPattern" type="b2602c69:ProjectViewProjectNode" />
               <item name="DesignPattern" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="principle" type="462c0819:PsiDirectoryNode" />
-              <item name="inversion" type="462c0819:PsiDirectoryNode" />
+              <item name="ntuzy" type="462c0819:PsiDirectoryNode" />
+              <item name="uml" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DesignPattern" type="b2602c69:ProjectViewProjectNode" />
               <item name="DesignPattern" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="principle" type="462c0819:PsiDirectoryNode" />
-              <item name="liskov" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DesignPattern" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DesignPattern" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="principle" type="462c0819:PsiDirectoryNode" />
-              <item name="liskov" type="462c0819:PsiDirectoryNode" />
-              <item name="improve" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DesignPattern" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DesignPattern" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="principle" type="462c0819:PsiDirectoryNode" />
-              <item name="ocp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DesignPattern" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DesignPattern" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="principle" type="462c0819:PsiDirectoryNode" />
-              <item name="ocp" type="462c0819:PsiDirectoryNode" />
-              <item name="improve" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DesignPattern" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DesignPattern" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="principle" type="462c0819:PsiDirectoryNode" />
-              <item name="ocp" type="462c0819:PsiDirectoryNode" />
-              <item name="improve" type="462c0819:PsiDirectoryNode" />
-              <item name="Ocp.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+              <item name="ntuzy" type="462c0819:PsiDirectoryNode" />
+              <item name="uml" type="462c0819:PsiDirectoryNode" />
+              <item name="composition" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
@@ -210,17 +311,18 @@
     <property name="SearchEverywhereHistoryKey" value="override&#9;ACTION&#9;OverrideMethods" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/ntuzy/uml/composition" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\src\DesignPattern\DesignPattern\src\com\ntuzy\principle\ocp\improve" />
-      <recent name="D:\src\DesignPattern\DesignPattern\src\com\ntuzy\principle\ocp" />
-      <recent name="D:\src\DesignPattern\DesignPattern\src\com\ntuzy\principle\liskov\improve" />
-      <recent name="D:\src\DesignPattern\DesignPattern\src\com\ntuzy\principle\liskov" />
-      <recent name="D:\src\DesignPattern\DesignPattern\src\com\ntuzy\principle\inversion\improve" />
+      <recent name="D:\src\DesignPattern\DesignPattern\src\com\ntuzy\uml\composition" />
+      <recent name="D:\src\DesignPattern\DesignPattern\src\com\ntuzy\uml\aggregation" />
+      <recent name="D:\src\DesignPattern\DesignPattern\src\com\ntuzy\uml\implementation" />
+      <recent name="D:\src\DesignPattern\DesignPattern\src\com\ntuzy\uml\generalization" />
+      <recent name="D:\src\DesignPattern\DesignPattern\src\com\ntuzy\uml\dependence" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -334,27 +436,27 @@
       <option name="presentableId" value="Default" />
       <updated>1574922870881</updated>
       <workItem from="1574922872080" duration="5481000" />
+      <workItem from="1575078168462" duration="5741000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5723000" />
+    <option name="totallyTimeSpent" value="12150000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2310635" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2310635" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -364,14 +466,15 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,98 +484,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/principle/singleresonsibilty/SingleResponsibility1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" selection-start-line="17" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/principle/singleresonsibilty/SingleResponsibility2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/principle/singleresonsibilty/SingleResponsibility3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/principle/segregation/Segregation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1704">
-          <caret line="103" column="1" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
-          <folding>
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-            <element signature="e#865#866#0" expanded="true" />
-            <element signature="e#919#920#0" expanded="true" />
-            <element signature="e#965#966#0" expanded="true" />
-            <element signature="e#1019#1020#0" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
-            <element signature="e#1119#1120#0" expanded="true" />
-            <element signature="e#1165#1166#0" expanded="true" />
-            <element signature="e#1219#1220#0" expanded="true" />
-            <element signature="e#1265#1266#0" expanded="true" />
-            <element signature="e#1319#1320#0" expanded="true" />
-            <element signature="e#1382#1383#0" expanded="true" />
-            <element signature="e#1421#1422#0" expanded="true" />
-            <element signature="e#1662#1663#0" expanded="true" />
-            <element signature="e#1701#1702#0" expanded="true" />
-            <element signature="e#1751#1752#0" expanded="true" />
-            <element signature="e#1790#1791#0" expanded="true" />
-            <element signature="e#1840#1841#0" expanded="true" />
-            <element signature="e#1879#1880#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/principle/segregation/improve/Segregation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/principle/inversion/DependencyInversion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/principle/inversion/improve/DependencyInversion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="26" column="5" selection-end-line="37" />
-          <folding>
-            <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/principle/singleresonsibilty/SingleResponsibility1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" selection-start-line="17" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ntuzy/principle/singleresonsibilty/SingleResponsibility2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
@@ -623,10 +634,8 @@
         <state relative-caret-position="120">
           <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
           <folding>
-            <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -687,8 +696,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ntuzy/principle/liskov/Liskov.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="904">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        <state>
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="e#558#559#0" expanded="true" />
             <element signature="e#583#584#0" expanded="true" />
@@ -698,8 +707,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ntuzy/principle/liskov/improve/Liskov.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="904">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="1248">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
           <folding>
             <element signature="e#767#768#0" expanded="true" />
             <element signature="e#792#793#0" expanded="true" />
@@ -713,8 +722,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ntuzy/principle/ocp/Ocp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="904">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="1272">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
           <folding>
             <element signature="e#586#587#0" expanded="true" />
             <element signature="e#621#622#0" expanded="true" />
@@ -732,8 +741,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ntuzy/principle/ocp/improve/Ocp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="58" column="25" lean-forward="true" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
+        <state relative-caret-position="462">
+          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
           <folding>
             <element signature="e#450#451#0" expanded="true" />
             <element signature="e#465#466#0" expanded="true" />
@@ -746,6 +755,375 @@
             <element signature="e#1157#1158#0" expanded="true" />
             <element signature="e#1180#1181#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/principle/demeter/Demeter1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#909#926#0" expanded="true" />
+            <element signature="e#1389#1399#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.ntuzy.principle.demeter.improve.Demeter1">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ntuzy.principle.demeter.improve.Demeter1</OriginalElement>
+          <nodes>
+            <node x="" y="">com.ntuzy.principle.demeter.improve.Demeter1</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="52.5" y="15.5" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/principle/demeter/improve/Demeter1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+          <folding>
+            <element signature="e#1356#1366#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/principle/demeter/improve/newFile.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="240.0" y="240.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="e#133#134#0" expanded="true" />
+            <element signature="e#164#165#0" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/newfile.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="0.0" y="0.0">com.ntuzy.uml.Person</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.2000000000000002" x="-698.1538461538461" y="-309.88461538461536" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/dependence/newfile.cld">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/dependence/PersonDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/dependence/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/dependence/IDCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/dependence/Department.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/dependence/PersonServiceBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/dependence/newfile.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="174.5" y="81.0">com.ntuzy.uml.dependence.PersonServiceBean</node>
+            <node x="109.0" y="0.0">com.ntuzy.uml.dependence.PersonDao</node>
+            <node x="241.0" y="0.0">com.ntuzy.uml.dependence.Person</node>
+            <node x="0.0" y="0.0">com.ntuzy.uml.dependence.IDCard</node>
+            <node x="349.0" y="0.0">com.ntuzy.uml.dependence.Department</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.ntuzy.uml.dependence.PersonServiceBean" target="com.ntuzy.uml.dependence.Person">
+              <point x="0.0" y="-50.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="com.ntuzy.uml.dependence.PersonServiceBean" target="com.ntuzy.uml.dependence.PersonDao">
+              <point x="-44.19999999999999" y="-50.0" />
+              <point x="240.8" y="51.0" />
+              <point x="165.0" y="51.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="com.ntuzy.uml.dependence.PersonServiceBean" target="com.ntuzy.uml.dependence.IDCard">
+              <point x="-88.39999999999998" y="-50.0" />
+              <point x="196.60000000000002" y="61.0" />
+              <point x="44.5" y="61.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="com.ntuzy.uml.dependence.PersonServiceBean" target="com.ntuzy.uml.dependence.Department">
+              <point x="88.39999999999998" y="-50.0" />
+              <point x="373.4" y="61.0" />
+              <point x="436.75" y="61.0" />
+              <point x="29.25" y="15.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="2.1000000000000005" x="-2.7380952380950276" y="-46.0952380952382" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Methods</Category>
+            <Category>Constructors</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/generalization/PersonServiceBean.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/generalization/newfile.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="0.0" y="81.0">com.ntuzy.uml.generalization.PersonServiceBean</node>
+            <node x="19.5" y="0.0">com.ntuzy.uml.generalization.DaoSupport</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.ntuzy.uml.generalization.PersonServiceBean" target="com.ntuzy.uml.generalization.DaoSupport">
+              <point x="0.0" y="-15.5" />
+              <point x="0.0" y="15.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-866.5" y="-385.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/implementation/PersonService.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/implementation/newfile.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="0.0" y="104.0">com.ntuzy.uml.implementation.PersonServiceBean</node>
+            <node x="0.0" y="0.0">com.ntuzy.uml.implementation.PersonService</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.ntuzy.uml.implementation.PersonServiceBean" target="com.ntuzy.uml.implementation.PersonService">
+              <point x="0.0" y="-27.0" />
+              <point x="0.0" y="27.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-866.5" y="-385.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/aggregation/Moniter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/aggregation/Mouse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/aggregation/Computer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/composition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/aggregation/enwfile.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="118.25" y="0.0">com.ntuzy.uml.aggregation.Mouse</node>
+            <node x="0.0" y="81.0">com.ntuzy.uml.aggregation.Computer</node>
+            <node x="4.25" y="0.0">com.ntuzy.uml.aggregation.Moniter</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.ntuzy.uml.aggregation.Computer" target="com.ntuzy.uml.aggregation.Mouse">
+              <point x="79.5" y="-62.0" />
+              <point x="185.5" y="56.0" />
+              <point x="184.25" y="56.0" />
+              <point x="22.0" y="15.5" />
+            </edge>
+            <edge source="com.ntuzy.uml.aggregation.Computer" target="com.ntuzy.uml.aggregation.Moniter">
+              <point x="-26.5" y="-62.0" />
+              <point x="79.5" y="56.0" />
+              <point x="74.75" y="56.0" />
+              <point x="23.5" y="15.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-866.5" y="-385.0" />
+          <SelectedNodes>
+            <node>com.ntuzy.uml.aggregation.Mouse</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Methods</Category>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/composition/Computer.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/composition/newfile.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="105.16666666666669" y="250.0">com.ntuzy.uml.composition.IDCard</node>
+            <node x="0.0" y="331.0">com.ntuzy.uml.composition.Person</node>
+            <node x="11.833333333333343" y="0.0">com.ntuzy.uml.composition.Moniter</node>
+            <node x="6.166666666666686" y="250.0">com.ntuzy.uml.composition.Head</node>
+            <node x="8.333333333333343" y="81.0">com.ntuzy.uml.composition.Computer</node>
+            <node x="125.83333333333334" y="0.0">com.ntuzy.uml.composition.Mouse</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.ntuzy.uml.composition.Computer" target="com.ntuzy.uml.composition.Mouse">
+              <point x="53.0" y="-62.0" />
+              <point x="167.33333333333334" y="56.0" />
+              <point x="169.83333333333334" y="56.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="com.ntuzy.uml.composition.Computer" target="com.ntuzy.uml.composition.Moniter">
+              <point x="-53.0" y="-62.0" />
+              <point x="61.33333333333334" y="56.0" />
+              <point x="58.83333333333334" y="56.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="com.ntuzy.uml.composition.Person" target="com.ntuzy.uml.composition.IDCard">
+              <point x="45.66666666666666" y="-38.5" />
+              <point x="114.16666666666666" y="306.0" />
+              <point x="149.66666666666669" y="306.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="com.ntuzy.uml.composition.Person" target="com.ntuzy.uml.composition.Head">
+              <point x="-45.66666666666666" y="-38.5" />
+              <point x="22.833333333333343" y="306.0" />
+              <point x="25.916666666666686" y="306.0" />
+              <point x="-19.75" y="15.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-866.5" y="-385.0" />
+          <SelectedNodes>
+            <node>com.ntuzy.uml.composition.Person</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Methods</Category>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/composition/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
