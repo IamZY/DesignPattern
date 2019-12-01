@@ -10,8 +10,6 @@ public class SingletonTest08 {
 
         instance1.sayOK();
 
-        Runtime
-
     }
 }
 
