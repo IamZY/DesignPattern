@@ -541,8 +541,8 @@ import java.io.InputStreamReader;
 public class OrderPizza {
     // 构造器
     // 定义简单工厂对象
-    SimpleFactory simpleFactory;
-    Pizza pizza = null;
+    private SimpleFactory simpleFactory;
+    private Pizza pizza = null;
 
     // 构造器
     public OrderPizza(SimpleFactory simpleFactory) {
@@ -603,7 +603,6 @@ public class OrderPizza {
   // 简单工厂类
   public class SimpleFactory {
   
-  
       // 根据type 返回Pizza对象
       public Pizza createPizza(String orderType) {
           Pizza pizza = null;
@@ -645,9 +644,243 @@ public class OrderPizza {
 
 ## 工厂方法模式
 
++ OrderPizza
 
+  ```java
+  package com.ntuzy.factory.factorymethod.pizzastore.order;
+  
+  import com.ntuzy.factory.factorymethod.pizzastore.pizza.Pizza;
+  
+  import java.io.BufferedReader;
+  import java.io.IOException;
+  import java.io.InputStreamReader;
+  
+  public abstract class OrderPizza {
+      // 构造器
+      public OrderPizza() {
+          Pizza pizza = null;
+          String orderType = "";
+  
+          do {
+              orderType = getType();
+              pizza = createPizza(orderType);  // 抽象的方法  由工厂子类完成
+  
+              pizza.prepare();
+              pizza.bake();
+              pizza.cut();
+              pizza.box();
+  
+          } while (true);
+  
+      }
+  
+      // 定义一个抽象方法 createPizza 让各个工厂子类自己实现
+      abstract Pizza createPizza(String orderType);
+  
+      // 写一个方法 可以获取客户希望订购Pizza种类
+      private String getType() {
+          try {
+              BufferedReader strin = new BufferedReader(new InputStreamReader(System.in));
+              System.out.println("input pizza 种类:");
+              String str = strin.readLine();
+              return str;
+          } catch (IOException e) {
+              e.printStackTrace();
+              return "";
+          }
+      }
+  
+  }
+  ```
 
++ BJOrderPizza
 
+  ```java
+  package com.ntuzy.factory.factorymethod.pizzastore.order;
+  
+  import com.ntuzy.factory.factorymethod.pizzastore.pizza.BJCheesePizza;
+  import com.ntuzy.factory.factorymethod.pizzastore.pizza.BJPepperPizza;
+  import com.ntuzy.factory.factorymethod.pizzastore.pizza.Pizza;
+  
+  public class BJOrderPizza extends OrderPizza {
+      @Override
+      Pizza createPizza(String orderType) {
+          Pizza pizza = null;
+  
+          if (orderType.equals("cheese")) {
+              pizza = new BJCheesePizza();
+              pizza.setName("北京的奶酪口味");
+          } else if (orderType.equals("pepper")) {
+              pizza = new BJPepperPizza();
+              pizza.setName("北京的胡椒口味");
+          }
+  
+          return pizza;
+      }
+  }
+  
+  ```
+
++ LDOrderPizza
+
+  ```java
+  package com.ntuzy.factory.factorymethod.pizzastore.order;
+  
+  import com.ntuzy.factory.factorymethod.pizzastore.pizza.*;
+  
+  public class LDOrderPizza extends OrderPizza {
+      @Override
+      Pizza createPizza(String orderType) {
+          Pizza pizza = null;
+  
+          if (orderType.equals("cheese")) {
+              pizza = new LDCheesePizza();
+              pizza.setName("伦敦的奶酪Pizza");
+          } else if (orderType.equals("pepper")) {
+              pizza = new LDPepperPizza();
+              pizza.setName("伦敦的胡椒Pizza");
+          }
+  
+          return pizza;
+      }
+  }
+  
+  ```
+
++ PizzaStore
+
+  ```java
+  package com.ntuzy.factory.factorymethod.pizzastore.order;
+  
+  public class PizzaStore {
+      public static void main(String[] args){
+          // 创建北京口味的各种Pizza
+          new BJOrderPizza();
+      }
+  }
+  ```
+
+## 抽象工厂模式
+
+定义了一个interface用于创建相关或有依赖关系的对象族，而无需指明具体的类
+
+抽象工厂模式可以将简单工厂模式和工厂方法模式进行i整合
+
+从设计层面上看，抽象工厂模式就是对简单工厂模式的改进，或者称为进一步的抽象
+
+将工厂抽象成两层，抽象工厂和具体实现的工厂子类
+
++ AbsFactory
+
+  ```java
+  package com.ntuzy.factory.absfactory.pizzastore.order;
+  
+  import com.ntuzy.factory.absfactory.pizzastore.pizza.Pizza;
+  
+  // 抽象工厂模式的抽象层
+  public interface AbsFactory {
+      // 让下面的工厂子类具体实现
+      public Pizza createPizza(String orderType);
+  }
+  
+  ```
+
++ OrderPizza
+
+  ```java
+  package com.ntuzy.factory.absfactory.pizzastore.order;
+  
+  import com.ntuzy.factory.absfactory.pizzastore.pizza.Pizza;
+  
+  import java.io.BufferedReader;
+  import java.io.IOException;
+  import java.io.InputStreamReader;
+  
+  public class OrderPizza {
+  
+      private AbsFactory absFactory;
+  
+      private void setAbsFactory(AbsFactory absFactory) {
+          Pizza pizza = null;
+          String orderType = "";
+          this.absFactory = absFactory;
+  
+          do {
+              orderType = getType();
+              pizza = absFactory.createPizza(orderType);
+  
+              if (pizza != null) {
+                  pizza.prepare();
+                  pizza.bake();
+                  pizza.cut();
+                  pizza.box();
+              } else {
+                  System.out.println("订购失败");
+                  break;
+              }
+  
+          } while (true);
+  
+      }
+  
+      public OrderPizza (AbsFactory absFactory) {
+          setAbsFactory(absFactory);
+      }
+  
+      // 写一个方法 可以获取客户希望订购Pizza种类
+      private String getType() {
+          try {
+              BufferedReader strin = new BufferedReader(new InputStreamReader(System.in));
+              System.out.println("input pizza 种类:");
+              String str = strin.readLine();
+              return str;
+          } catch (IOException e) {
+              e.printStackTrace();
+              return "";
+          }
+      }
+  
+  }
+  ```
+
++ PizzaStore
+
+  ```java
+  package com.ntuzy.factory.absfactory.pizzastore.order;
+  
+  public class PizzaStore {
+      public static void main(String[] args){
+          new OrderPizza(new BJFactory());
+      }
+  }
+  ```
+
++ BJFactory
+
+  ```java
+  package com.ntuzy.factory.absfactory.pizzastore.order;
+  
+  import com.ntuzy.factory.absfactory.pizzastore.pizza.BJCheesePizza;
+  import com.ntuzy.factory.absfactory.pizzastore.pizza.BJPepperPizza;
+  import com.ntuzy.factory.absfactory.pizzastore.pizza.Pizza;
+  
+  // 工厂子类
+  public class BJFactory implements AbsFactory {
+      @Override
+      public Pizza createPizza(String orderType) {
+          Pizza pizza = null;
+          System.out.println("抽象工厂模式...");
+          if (orderType.equals("cheese")) {
+              pizza = new BJCheesePizza();
+              pizza.setName("北京奶酪口味");
+          } else if (orderType.equals("pepper")) {
+              pizza = new BJPepperPizza();
+              pizza.setName("北京胡椒口味");
+          }
+          return pizza;
+      }
+  }
+  ```
 
 
 
