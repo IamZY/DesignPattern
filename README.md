@@ -882,11 +882,216 @@ public class OrderPizza {
   }
   ```
 
+## 原型模式
 
+用原型实例指定创建对象的种类，通过拷贝这些模型，创建新的对象
 
+允许对象再创建另外一个可定制的对象，无需知道如果创建的细节
 
+JDK中bean运用到了原型模式
 
++ Sheep
 
+  ```java
+  package com.ntuzy.protoptype.improve;
+  
+  public class Sheep implements Cloneable {
+      private String name;
+      private int age;
+      private String color;
+  
+      public Sheep(String name, int age, String color) {
+          this.name = name;
+          this.age = age;
+          this.color = color;
+      }
+  
+  
+      public String getName() {
+          return name;
+      }
+  
+      public void setName(String name) {
+          this.name = name;
+      }
+  
+      public int getAge() {
+          return age;
+      }
+  
+      public void setAge(int age) {
+          this.age = age;
+      }
+  
+      public String getColor() {
+          return color;
+      }
+  
+      public void setColor(String color) {
+          this.color = color;
+      }
+  
+  
+      @Override
+      public String toString() {
+          return "Sheep{" +
+                  "name='" + name + '\'' +
+                  ", age=" + age +
+                  ", color='" + color + '\'' +
+                  '}';
+      }
+  
+      // 克隆该实例 使用默认的克隆方法来完成
+      @Override
+      protected Object clone() {
+          Sheep sheep = null;
+          try {
+              sheep = (Sheep) super.clone();
+          } catch (CloneNotSupportedException e) {
+              e.printStackTrace();
+          }
+          return sheep;
+      }
+  
+  }
+  
+  ```
+
++ client
+
+  ```java
+  package com.ntuzy.protoptype.improve;
+  
+  public class Client {
+      public static void main(String[] args){
+          Sheep sheep = new Sheep("tom",1,"白色");
+          Sheep sheep2 = (Sheep) sheep.clone();
+          Sheep sheep3 = (Sheep) sheep.clone();
+          Sheep sheep4 = (Sheep) sheep.clone();
+          Sheep sheep5 = (Sheep) sheep.clone();
+  
+          System.out.println(sheep);
+          System.out.println(sheep2);
+  
+      }
+  }
+  
+  ```
+
+### 浅拷贝
+
++ 对于数类型是基本数据类型的成员变量，浅拷贝会直接进行值传递，也就是将该属性复制一份给新的对象
++ 对于数据类型是因哟昂数据类型的成员变量，比如说是成员变量是某个数组、某个类的对象等，那么浅拷贝会进行引用传递，也就是将该成员变量的引用值复制一份给新的对象。因为实际上两个对象的该成员的变量都指向同一个实例，在这种情况下，一个对象中修改该成员便改良会影响到另一个对象的该变量的值。
++ Sheep = (Sheep) super.clone();
+
+### 深拷贝
+
++ 复制对象的所有基本数据类型的成员变量值
+
++ 为所有引用数据类型的成员变量申请存储空间，并复制每个引用数据类型成员变量所引用的对象，直到该对象可达到的所有对象。也就是说，对象进行深拷贝要对整个对象进行拷贝。
+
++ 两种方式
+
+  + 重写Clone方法
+  + 实现序列化
+
+  ```java
+  package com.ntuzy.protoptype.deepclone;
+  
+  import java.io.*;
+  
+  public class DeepProtoType implements Serializable, Cloneable {
+  
+      public String name;
+      public DeepCloneableTarget deepCloneableTarget;  // 引用类型的属性
+  
+  
+      public DeepProtoType() {
+  
+      }
+  
+  
+      // 深拷贝  1 方式1 使用clone方法
+      @Override
+      protected Object clone() throws CloneNotSupportedException {
+          Object deep = null;
+          // 完成对基本数据类型（属性）和String的clone
+          deep = super.clone();
+  
+          // 对引用类型属性进行单独处理
+          DeepProtoType deepProtoType = (DeepProtoType) deep;
+          deepProtoType.deepCloneableTarget = (DeepCloneableTarget) deepCloneableTarget.clone();
+  
+          return deep;
+      }
+  
+  
+      // 方式2 对象序列化进行深拷贝 推荐使用
+      public Object deepClone() {
+          // 创建流对象
+          ByteArrayOutputStream bos = null;
+          ObjectOutputStream oos = null;
+          ByteArrayInputStream bis = null;
+          ObjectInputStream ois = null;
+  
+          try {
+              // 序列化
+              bos = new ByteArrayOutputStream();
+              oos = new ObjectOutputStream(bos);
+              oos.writeObject(this); // 当前这个对象以对象流的形式输出
+  
+              // 反序列化
+              bis = new ByteArrayInputStream(bos.toByteArray());
+              ois = new ObjectInputStream(bis);
+  
+              DeepProtoType copyObj = (DeepProtoType) ois.readObject();
+  
+  
+              return copyObj;
+          } catch (Exception e) {
+              e.printStackTrace();
+              return null;
+          } finally {
+              // 关闭流
+              try {
+                  bos.close();
+                  oos.close();
+                  bis.close();
+                  ois.close();
+              } catch (Exception e) {
+                  e.printStackTrace();
+              }
+  
+          }
+  
+      }
+  
+  
+  }
+  
+  ```
+
+  ```java
+  package com.ntuzy.protoptype.deepclone;
+  
+  public class Client {
+      public static void main(String[] args) throws CloneNotSupportedException {
+          DeepProtoType p = new DeepProtoType();
+          p.name = "松江";
+          p.deepCloneableTarget = new DeepCloneableTarget("大牛", "大牛的类");
+  
+          // 方式1 进行深拷贝
+          //DeepProtoType p2 = (DeepProtoType) p.clone();
+          //System.out.println(p);
+          //System.out.println(p2);
+          
+          DeepProtoType p2 = (DeepProtoType) p.deepClone();
+          System.out.println(p);
+          System.out.println(p2);
+  
+      }
+  }
+  ```
 
 
 
