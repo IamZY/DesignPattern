@@ -12,53 +12,141 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Sheep.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/protoptype/improve/Sheep.java">
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/protoptype/deepclone/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="72">
+              <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractHouse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/builder/AbstractHouse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonHouse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/builder/CommonHouse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
               <folding>
-                <element signature="e#210#211#0" expanded="true" />
-                <element signature="e#239#240#0" expanded="true" />
-                <element signature="e#282#283#0" expanded="true" />
-                <element signature="e#318#319#0" expanded="true" />
+                <element signature="e#120#121#0" expanded="true" />
+                <element signature="e#165#166#0" expanded="true" />
+                <element signature="e#211#212#0" expanded="true" />
+                <element signature="e#255#256#0" expanded="true" />
+                <element signature="e#298#299#0" expanded="true" />
+                <element signature="e#342#343#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/protoptype/improve/Client.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/builder/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="House.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/builder/improve/House.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+              <folding>
+                <element signature="e#165#166#0" expanded="true" />
+                <element signature="e#193#194#0" expanded="true" />
+                <element signature="e#235#236#0" expanded="true" />
+                <element signature="e#269#270#0" expanded="true" />
+                <element signature="e#300#301#0" expanded="true" />
+                <element signature="e#327#328#0" expanded="true" />
+                <element signature="e#367#368#0" expanded="true" />
+                <element signature="e#399#400#0" expanded="true" />
+                <element signature="e#432#433#0" expanded="true" />
+                <element signature="e#461#462#0" expanded="true" />
+                <element signature="e#505#506#0" expanded="true" />
+                <element signature="e#541#542#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HouseBuilder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/builder/improve/HouseBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+              <folding>
+                <element signature="e#377#378#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/builder/improve/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonHouse.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/builder/improve/CommonHouse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#127#128#0" expanded="true" />
+                <element signature="e#174#175#0" expanded="true" />
+                <element signature="e#220#221#0" expanded="true" />
+                <element signature="e#267#268#0" expanded="true" />
+                <element signature="e#309#310#0" expanded="true" />
+                <element signature="e#355#356#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HighBuilding.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/builder/improve/HighBuilding.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="15" column="63" lean-forward="true" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <folding>
+                <element signature="e#128#129#0" expanded="true" />
+                <element signature="e#175#176#0" expanded="true" />
+                <element signature="e#221#222#0" expanded="true" />
+                <element signature="e#268#269#0" expanded="true" />
+                <element signature="e#310#311#0" expanded="true" />
+                <element signature="e#354#355#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeepCloneableTarget.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/protoptype/deepclone/DeepCloneableTarget.java">
+      <file leaf-file-name="HouseDirector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/builder/improve/HouseDirector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeepProtoType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/protoptype/deepclone/DeepProtoType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="643">
-              <caret line="55" column="19" lean-forward="true" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/ntuzy/protoptype/deepclone/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+            <state relative-caret-position="96">
+              <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+              <folding>
+                <element signature="e#176#177#0" expanded="true" />
+                <element signature="e#210#211#0" expanded="true" />
+                <element signature="e#284#285#0" expanded="true" />
+                <element signature="e#319#320#0" expanded="true" />
+                <element signature="e#381#382#0" expanded="true" />
+                <element signature="e#429#430#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,15 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/ntuzy/uml/Person.java" />
-        <option value="$PROJECT_DIR$/src/com/ntuzy/uml/dependence/Department.java" />
-        <option value="$PROJECT_DIR$/src/com/ntuzy/uml/generalization/PersonServiceBean.java" />
-        <option value="$PROJECT_DIR$/src/com/ntuzy/uml/implementation/PersonService.java" />
-        <option value="$PROJECT_DIR$/src/com/ntuzy/uml/aggregation/Computer.java" />
-        <option value="$PROJECT_DIR$/src/com/ntuzy/uml/composition/Computer.java" />
-        <option value="$PROJECT_DIR$/src/com/ntuzy/uml/composition/Person.java" />
-        <option value="$PROJECT_DIR$/src/com/ntuzy/singleton/SingletonTest01.java" />
-        <option value="$PROJECT_DIR$/src/com/ntuzy/singleton/type1/SingletonTest01.java" />
         <option value="$PROJECT_DIR$/src/com/ntuzy/singleton/type2/SingletonTest02.java" />
         <option value="$PROJECT_DIR$/src/com/ntuzy/singleton/type3/SingletonTest03.java" />
         <option value="$PROJECT_DIR$/src/com/ntuzy/singleton/type4/SingletonTest03.java" />
@@ -127,6 +206,15 @@
         <option value="$PROJECT_DIR$/src/com/ntuzy/factory/absfactory/pizzastore/order/BJFactory.java" />
         <option value="$PROJECT_DIR$/src/com/ntuzy/protoptype/deepclone/DeepProtoType.java" />
         <option value="$PROJECT_DIR$/src/com/ntuzy/protoptype/deepclone/Client.java" />
+        <option value="$PROJECT_DIR$/src/com/ntuzy/builder/AbstractHouse.java" />
+        <option value="$PROJECT_DIR$/src/com/ntuzy/builder/CommonHouse.java" />
+        <option value="$PROJECT_DIR$/src/com/ntuzy/builder/Client.java" />
+        <option value="$PROJECT_DIR$/src/com/ntuzy/builder/improve/HouseBuilder.java" />
+        <option value="$PROJECT_DIR$/src/com/ntuzy/builder/improve/CommonHouse.java" />
+        <option value="$PROJECT_DIR$/src/com/ntuzy/builder/improve/HighBuilding.java" />
+        <option value="$PROJECT_DIR$/src/com/ntuzy/builder/improve/HouseDirector.java" />
+        <option value="$PROJECT_DIR$/src/com/ntuzy/builder/improve/House.java" />
+        <option value="$PROJECT_DIR$/src/com/ntuzy/builder/improve/Client.java" />
       </list>
     </option>
   </component>
@@ -173,15 +261,15 @@
               <item name="DesignPattern" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ntuzy" type="462c0819:PsiDirectoryNode" />
-              <item name="protoptype" type="462c0819:PsiDirectoryNode" />
+              <item name="builder" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DesignPattern" type="b2602c69:ProjectViewProjectNode" />
               <item name="DesignPattern" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ntuzy" type="462c0819:PsiDirectoryNode" />
-              <item name="protoptype" type="462c0819:PsiDirectoryNode" />
-              <item name="deepclone" type="462c0819:PsiDirectoryNode" />
+              <item name="builder" type="462c0819:PsiDirectoryNode" />
+              <item name="improve" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -193,7 +281,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="cons&#9;ACTION&#9;GenerateConstructor&#10;getter&#9;ACTION&#9;GenerateGetterAndSetter&#10;setter&#9;ACTION&#9;GenerateGetterAndSetter&#10;constr&#9;ACTION&#9;GenerateConstructor&#10;override&#9;ACTION&#9;OverrideMethods" />
+    <property name="SearchEverywhereHistoryKey" value="toString&#9;ACTION&#9;Actions.ActionsPlugin.GenerateToString&#10;setter&#9;ACTION&#9;GenerateGetterAndSetter&#10;getter&#9;ACTION&#9;GenerateGetterAndSetter&#10;cons&#9;ACTION&#9;GenerateConstructor&#10;constr&#9;ACTION&#9;GenerateConstructor&#10;override&#9;ACTION&#9;OverrideMethods" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -226,7 +314,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client (1)">
+  <component name="RunManager" selected="Application.Client (3)">
     <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ntuzy.protoptype.deepclone.Client" />
       <module name="DesignPattern" />
@@ -234,6 +322,28 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ntuzy.protoptype.deepclone.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Client (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ntuzy.builder.Client" />
+      <module name="DesignPattern" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ntuzy.builder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Client (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ntuzy.builder.improve.Client" />
+      <module name="DesignPattern" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ntuzy.builder.improve.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -249,17 +359,6 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="PizzaStore (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ntuzy.factory.factorymethod.pizzastore.order.PizzaStore" />
-      <module name="DesignPattern" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ntuzy.factory.factorymethod.pizzastore.order.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
     <configuration name="PizzaStore (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ntuzy.factory.absfactory.pizzastore.order.PizzaStore" />
       <module name="DesignPattern" />
@@ -267,17 +366,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ntuzy.factory.absfactory.pizzastore.order.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="PizzaStore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ntuzy.factory.simplefactory.pizzastore.order.PizzaStore" />
-      <module name="DesignPattern" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ntuzy.factory.simplefactory.pizzastore.order.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -324,19 +412,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.PizzaStore" />
-      <item itemvalue="Application.PizzaStore (1)" />
       <item itemvalue="Application.PizzaStore (2)" />
       <item itemvalue="Application.Client" />
       <item itemvalue="Application.Client (1)" />
+      <item itemvalue="Application.Client (2)" />
+      <item itemvalue="Application.Client (3)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client (3)" />
+        <item itemvalue="Application.Client (2)" />
         <item itemvalue="Application.Client (1)" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.PizzaStore (2)" />
-        <item itemvalue="Application.PizzaStore (1)" />
-        <item itemvalue="Application.PizzaStore" />
       </list>
     </recent_temporary>
   </component>
@@ -354,12 +442,12 @@
       <workItem from="1575078168462" duration="10685000" />
       <workItem from="1575169484427" duration="9785000" />
       <workItem from="1575199856414" duration="1704000" />
-      <workItem from="1575266802272" duration="5213000" />
+      <workItem from="1575266802272" duration="9214000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33796000" />
+    <option name="totallyTimeSpent" value="37797000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -367,7 +455,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.32976282" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -375,7 +463,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3205815" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3205815" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -416,120 +504,29 @@
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ntuzy/builder/improve/Client.java</url>
+          <line>5</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ntuzy/builder/improve/Client.java</url>
+          <line>7</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ntuzy/builder/improve/Client.java</url>
+          <line>10</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="11" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/composition/newfile.uml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="105.16666666666669" y="250.0">com.ntuzy.uml.composition.IDCard</node>
-            <node x="0.0" y="331.0">com.ntuzy.uml.composition.Person</node>
-            <node x="11.833333333333343" y="0.0">com.ntuzy.uml.composition.Moniter</node>
-            <node x="6.166666666666686" y="250.0">com.ntuzy.uml.composition.Head</node>
-            <node x="8.333333333333343" y="81.0">com.ntuzy.uml.composition.Computer</node>
-            <node x="125.83333333333334" y="0.0">com.ntuzy.uml.composition.Mouse</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="com.ntuzy.uml.composition.Computer" target="com.ntuzy.uml.composition.Mouse">
-              <point x="53.0" y="-62.0" />
-              <point x="167.33333333333334" y="56.0" />
-              <point x="169.83333333333334" y="56.0" />
-              <point x="0.0" y="15.5" />
-            </edge>
-            <edge source="com.ntuzy.uml.composition.Computer" target="com.ntuzy.uml.composition.Moniter">
-              <point x="-53.0" y="-62.0" />
-              <point x="61.33333333333334" y="56.0" />
-              <point x="58.83333333333334" y="56.0" />
-              <point x="0.0" y="15.5" />
-            </edge>
-            <edge source="com.ntuzy.uml.composition.Person" target="com.ntuzy.uml.composition.IDCard">
-              <point x="45.66666666666666" y="-38.5" />
-              <point x="114.16666666666666" y="306.0" />
-              <point x="149.66666666666669" y="306.0" />
-              <point x="0.0" y="15.5" />
-            </edge>
-            <edge source="com.ntuzy.uml.composition.Person" target="com.ntuzy.uml.composition.Head">
-              <point x="-45.66666666666666" y="-38.5" />
-              <point x="22.833333333333343" y="306.0" />
-              <point x="25.916666666666686" y="306.0" />
-              <point x="-19.75" y="15.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-866.0" y="-385.0" />
-          <SelectedNodes>
-            <node>com.ntuzy.uml.composition.Person</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/uml/composition/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/singleton/type1/SingletonTest01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/singleton/type2/SingletonTest02.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="50" selection-start-line="6" selection-start-column="8" selection-end-line="10" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/singleton/type3/SingletonTest03.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/singleton/type4/SingletonTest04.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/singleton/type6/SingletonTest06.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="11" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/singleton/type7/SingletonTest07.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Runtime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="83" column="6" selection-start-line="83" selection-start-column="6" selection-end-line="83" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ntuzy/singleton/type8/SingletonTest08.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -797,8 +794,120 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ntuzy/protoptype/deepclone/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        <state relative-caret-position="72">
+          <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/builder/AbstractHouse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/builder/CommonHouse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#120#121#0" expanded="true" />
+            <element signature="e#165#166#0" expanded="true" />
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#255#256#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/builder/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/builder/improve/HighBuilding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <element signature="e#128#129#0" expanded="true" />
+            <element signature="e#175#176#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/builder/improve/House.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+          <folding>
+            <element signature="e#165#166#0" expanded="true" />
+            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/builder/improve/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/builder/improve/HouseDirector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding>
+            <element signature="e#176#177#0" expanded="true" />
+            <element signature="e#210#211#0" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/builder/improve/HouseBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="e#377#378#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ntuzy/builder/improve/CommonHouse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#127#128#0" expanded="true" />
+            <element signature="e#174#175#0" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

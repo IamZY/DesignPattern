@@ -1093,11 +1093,16 @@ JDK中bean运用到了原型模式
   }
   ```
 
+## 建造者模式
 
+生成器模式，是一种对象构建模式，可以将复杂对象的建造过程抽象出来，使这个抽象过程的不同实现方法可以构造出不同的表现的对象。
 
++ Product
++ Builder
++ ConcreteBuilder
++ Director
 
-
-
+![image](https://github.com/IamZY/DesignPattern/blob/master/images/1575273622009.png)
 
 
 
