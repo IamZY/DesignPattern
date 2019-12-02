@@ -1104,6 +1104,98 @@ JDK中bean运用到了原型模式
 
 ![image](https://github.com/IamZY/DesignPattern/blob/master/images/1575273622009.png)
 
+## 适配器模式
+
++ 将某个类的接口转换成客户端期望的另一个接口表示，主要的目的就是兼容性，让原本因接口不匹配不能在一起工作的两个类可以协同工作。
+
++ 适配器模式属于结构型模式
++ 类适配器模式、对象适配器模式、接口适配器模式
+
+### 类适配器模式
+
+```java
+// 适配器类
+public class VoltageAdapter extends Voltage220V implements IVoltage5V {
+    @Override
+    public int output5V() {
+        // 获取220v的电压
+        int srcV = output220V();
+        int dstV = srcV / 44;   // 转成5v
+
+        return dstV;
+    }
+}
+
+```
+
+### 对象适配器模式
+
+解决类适配器继承src类的问题
+
+```java
+package com.ntuzy.adapter.objectadapter;
+
+// 适配器类
+public class VoltageAdapter implements IVoltage5V {
+
+    private Voltage220V voltage220V; // 关联关系中的聚和
+
+    // 通过构造器传入220v的实例
+    public VoltageAdapter(Voltage220V voltage220V) {
+        this.voltage220V = voltage220V;
+    }
+
+
+    @Override
+    public int output5V() {
+        // 获取220v的电压
+        int dst = 0;
+
+        if (null != voltage220V) {
+            int src = voltage220V.output220V();  // 获取220v电压
+            System.out.println("使用对象适配器，进行适配");
+            dst = src/44;
+            System.out.println("转换过的电压=" + dst);
+        }
+        return dst;
+    }
+}
+```
+
+### 接口适配器模式
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
