@@ -1164,9 +1164,60 @@ public class VoltageAdapter implements IVoltage5V {
 
 ### 接口适配器模式
 
+```java
+package com.ntuzy.adapter.interfaceadapter;
 
+public abstract class AbsAdapter implements Interface4 {
 
+    @Override
+    public void m1() {
 
+    }
+
+    @Override
+    public void m2() {
+
+    }
+
+    @Override
+    public void m3() {
+
+    }
+
+    @Override
+    public void m4() {
+
+    }
+}
+
+```
+
++ client
+
+  ```java
+  package com.ntuzy.adapter.interfaceadapter;
+  
+  public class Client {
+      public static void main(String[] args) {
+          AbsAdapter absAdapter = new AbsAdapter() {
+              @Override
+              public void m1() {
+                  super.m1();
+              }
+          };
+  
+          absAdapter.m2();
+  
+      }
+  }
+  
+  ```
+
+## 桥接模式
+
+桥接模式(Bridge Pattern)：将抽象部分与它的实现部分分离，使它们都可以独立地变化。它是一种对象结构型模式，又称为柄体(Handle and Body)模式或接口(Interface)模式。
+
+![image](https://github.com/IamZY/DesignPattern/blob/master/images/image-20191203104921211.png)
 
 
 
