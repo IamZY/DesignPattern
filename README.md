@@ -1245,9 +1245,42 @@ public abstract class AbsAdapter implements Interface4 {
 1. 会出现更多的代码，更多的类，增加程序的复杂性。
 2. 动态装饰时，多层装饰时会更复杂。（使用继承来拓展功能会增加类的数量，使用装饰者模式不会像继承那样增加那么多类的数量但是会增加对象的数量，当对象的数量增加到一定的级别时，无疑会大大增加我们代码调试的难度）
 
+## 组合模式
+
+ 部分整体模式，他创建了对象组的树形结构，将对象组和成在树状结构以表示"整体-部分"
+
+```java
+package com.ntuzy.composite;
+
+public class Client {
+    public static void main(String[] args){
+        // 从大到小创建对象
+        OrganizationComponent university = new University("清华大学", "中国顶级大学");
+
+        //
+        OrganizationComponent college1 = new College("计算机学院", "计算机学院");
+        OrganizationComponent college2 = new College("信息工程学院", "信息工程学院");
+
+        // 创建各个学院下面的系
+        college1.add(new Department("软件工程","软件工程"));
+        college1.add(new Department("网络工程","网络工程"));
+        college1.add(new Department("计算机科学与技术","计算机科学与技术"));
+
+        //
+        college2.add(new Department("通信工程","通信工程"));
+        college2.add(new Department("信息工程","信息工程"));
+
+        university.add(college1);
+        university.add(college2);
+
+        university.print();
+        college1.print();
+
+    }
+}
+```
 
 
- 
 
 
 
