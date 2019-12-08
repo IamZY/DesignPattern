@@ -1280,13 +1280,89 @@ public class Client {
 }
 ```
 
+## 外观模式
 
++ 外观类：为调用端提供统一的调用接口，外观类知道哪些子系统负责处理请求。从而将调用端的请求代理给适当子系统对象
 
++ 调用者：外观接口的调用者
++ 子系统的解和：指模块或者子系统，处理Facade对象指派的任务，他是功能的实际提供者
 
++ HomeThreaterFacade
 
+  ```java
+  package com.ntuzy.facade;
+  
+  public class HomeTheaterFacade {
+  
+      // 定义各个子系统的对象
+      private TheaherLight theaherLight;
+      private Popcorn popcorn;
+      private Stereo stereo;
+      private Projector projector;
+      private Screen screen;
+      private DVDPlayer dvdPlayer;
+  
+  
+      public HomeTheaterFacade() {
+          this.theaherLight = TheaherLight.getInstance();
+          this.popcorn = Popcorn.getInstance();
+          this.stereo = Stereo.getInstance();
+          this.projector = Projector.getInstance();
+          this.screen = Screen.getInstance();
+          this.dvdPlayer = DVDPlayer.getInstance();
+      }
+  
+      public void ready() {
+          popcorn.on();
+          popcorn.pop();
+          screen.down();
+          projector.on();
+          stereo.on();
+          dvdPlayer.on();
+          theaherLight.dim();
+      }
+  
+      public void play() {
+          dvdPlayer.play();
+      }
+  
+      public void pause() {
+          dvdPlayer.pause();
+      }
+  
+      public void end() {
+          popcorn.off();
+          theaherLight.bright();
+          screen.up();
+          projector.off();
+          stereo.off();
+          dvdPlayer.off();
+      }
+  
+  
+      public static void main(String[] args) {
+  
+      }
+  }
+  ```
 
++ Client
 
+  ```java
+  package com.ntuzy.facade;
+  
+  public class Client {
+      public static void main(String[] args){
+          HomeTheaterFacade homeTheaterFacade = new HomeTheaterFacade();
+          homeTheaterFacade.ready();
+          homeTheaterFacade.play();
+      }
+  }
+  ```
 
++ 
+
+## 享元模式
 
 
 
