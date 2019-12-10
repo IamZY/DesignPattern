@@ -1364,9 +1364,38 @@ public class Client {
 
 ## 享元模式
 
+主要用于减少创建对象的数量，以减少内存占用和提高性能。这种类型的设计模式属于结构型模式，它提供了减少对象数量从而改善应用所需的对象结构的方式。
 
+享元模式尝试重用现有的同类对象，如果未找到匹配的对象，则创建新对象。
 
+```java
+package com.ntuzy.flyweight;
 
+import java.util.HashMap;
+
+// 网站工厂类 根据需求返回一个网站
+public class WebSiteFactory {
+
+    // 集合 充当池的形式
+    private HashMap<String, ConcreteWebSite> pool = new HashMap<>();
+
+    // 根据网站的类型 返回一个网站 如果没有就创建一个网站并放入到池中
+    public WebSite getWebSiteCategory(String type) {
+        if (!pool.containsKey(type)) {
+            // 就创建一个网站
+            pool.put(type, new ConcreteWebSite(type));
+        }
+
+        return (WebSite) pool.get(type);
+    }
+
+    // 获取网站分类的总数,池中有多少实际的网站
+    public int getWebSiteCount() {
+        return pool.size();
+    }
+
+}
+```
 
 
 
