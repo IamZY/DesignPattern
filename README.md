@@ -1397,6 +1397,153 @@ public class WebSiteFactory {
 }
 ```
 
+## 代理模式
+
+### 静态代理
+
+在不修改目标对象的功能的前提下 能通过代理对象对目标功能进行扩展
+
+```java
+package com.ntuzy.proxy.staticproxy;
+
+public class Client {
+    public static void main(String[] args){
+        // 创建目标对象 被代理对象
+        TeacherDao teacherDao = new TeacherDao();
+
+        // 创建代理对象 同时将被代理对象传递给代理对象
+        TeacherDaoProxy teacherDaoProxy = new TeacherDaoProxy(teacherDao);
+
+        // 通过代理对象 调用到被代理对象的方法
+        // 执行的是代理对象的方法 代理对象再去调用目标对象的方法
+        teacherDaoProxy.teach();
+
+    }
+}
+
+```
+
+### 动态代理
+
+```java
+package com.ntuzy.proxy.dynamic;
+
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
+
+public class ProxyFactory {
+    // 维护一个目标对象
+    private Object target;
+
+
+    // 构造器 对target进行初始化
+    public ProxyFactory(Object target) {
+        this.target = target;
+    }
+
+    // 给目标对象生成一个代理对象
+    public Object getProxyInstance() {
+        // loader 当前目标对象使用的类加载器 获取加载器的方法固定
+        // interface 目标对象实现的接口类型 使用泛型的方式确认类型
+        // InvocationHandler 事情处理 执行目标对象的方法时 会触发事情处理器方法 会把当前执行目标对象方法
+        return Proxy.newProxyInstance(
+                target.getClass().getClassLoader(),
+                target.getClass().getInterfaces(),
+                new InvocationHandler() {
+                    @Override
+                    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+                        System.out.println("jdk代理开始");
+                        // 通过反射机制调用目标对象的方法
+                        Object returnVal = method.invoke(target, args);
+                        return returnVal;
+                    }
+                });
+    }
+
+}
+
+```
+
+### Cglib代理
+
+```java
+package com.ntuzy.proxy.cglib;
+
+import net.sf.cglib.proxy.Enhancer;
+import net.sf.cglib.proxy.MethodInterceptor;
+import net.sf.cglib.proxy.MethodProxy;
+
+import java.lang.reflect.Method;
+
+public class ProxyFactory implements MethodInterceptor {
+
+    private Object target;
+
+    // 传入一个被代理的对象
+    public ProxyFactory(Object target) {
+        this.target = target;
+    }
+
+    // 返回一个代理对象 是target对象的代理对象
+    public Object getProxyInstance() {
+        // 创建工具类
+        Enhancer enhancer = new Enhancer();
+        // 设置父类
+        enhancer.setSuperclass(target.getClass());
+        // 设置回调函数
+        enhancer.setCallback(this);
+        // 创建子类对象 即代理对象
+        return enhancer.create();
+    }
+
+
+    // 重写intercept方法 会调用目标对象的方法
+    @Override
+    public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
+        System.out.println("Cglib代理模式开始");
+        Object returnVal = method.invoke(target, objects);
+        System.out.println("Cglib代理模式提交");
+        return returnVal;
+    }
+}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
