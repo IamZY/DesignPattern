@@ -1554,6 +1554,74 @@ public abstract class SoyaMilk {
 }
 ```
 
+## 命令模式
+
+定义：将“请求”封装成对象，以便使用不同的请求、队列或者日志来参数化其他对象。命令模式也支持撤销的操作。
+
+包括三个核心对象：
+
+1、调用者（Invoker）：持有一个命令对象，并在某个时间点调用命令对象的execute()方法。
+
+2、命令对象（Command）：持有一个接收者，和一个execute()方法，在execute中执行接收者的动作。
+
+3、接收者（Receiver）：动作的执行者。
+
+jdbcTemplate
+
+```java
+package com.ntuzy.command;
+
+public class RemoteController {
+    // 开按钮的命令数组
+    Command[] onCommands;
+    Command[] offCommands;
+
+    // 执行撤销命令
+    Command undoCommand;
+
+    // 构造器 完成对按钮的初始化
+    public RemoteController() {
+        onCommands = new Command[5];
+        offCommands = new Command[5];
+
+        for(int i = 0;i < 5;i++) {
+            onCommands[i] = new NoCommand();
+            offCommands[i] = new NoCommand();
+        }
+
+    }
+
+    // 给按钮设置你需要的命令即可
+    public void setCommand(int no,Command onCommand,Command offCommand) {
+        onCommands[no] = onCommand;
+        offCommands[no] = offCommand;
+    }
+
+    // 按下开按钮
+    public void onButtonWasPushed(int no) {
+        // 找到按下开的按钮  并调用对应的方法
+        onCommands[no].execute();
+        // 记录最后这次的操作 用于撤销
+        undoCommand = onCommands[no];
+    }
+
+    // 按下关按钮
+    public void offButtonWasPushed(int no) {
+        // 找到按下开的按钮  并调用对应的方法
+        offCommands[no].execute();
+        // 记录最后这次的操作 用于撤销
+        undoCommand = offCommands[no];
+    }
+
+    // 按下撤销按钮
+    public void undoButtonWasPushed() {
+        undoCommand.undo();
+    }
+
+}
+
+```
+
 
 
 
