@@ -1622,9 +1622,15 @@ public class RemoteController {
 
 ```
 
+## 访问者模式
 
+封装一些作用于某种数据结构的各元素的操作，他可以在不改变数据结构的前提下定义作用于这些元素的新的操作
 
-
++ Visitor是抽象的访问者，为该对象结构中的ConcreteElement的每个类生命一个visit操作
++ ConcreteVisitor 是每个具体访问值，实现每个有Visitor声明的操作，是每个操作的实现部分
++ ObjectStructure 能枚举他的元素，可以提供一个高层接口，用来允许访问者访问元素
++ Element 定义一个accept方法，接受一个访问者对象
++ ConcreteElement 为具体元素，实现了accept方法
 
 
 
