@@ -1921,11 +1921,128 @@ public class RemoteController {
   
   ```
 
-  
+## 备忘录模式
+
+备忘录模式（Memento Pattern）保存一个对象的某个状态，以便在适当的时候恢复对象。备忘录模式属于行为型模式。
+
+备忘录模式使用三个类 *Memento*、*Originator* 和 *CareTaker*。
+
++ Memento 包含了要被恢复的对象的状态。
+
++ Originator 创建并在 Memento 对象中存储状态。
+
++ Caretaker 对象负责从 Memento 中恢复对象的状态。
+
+### CareTaker
+
+```java
+package com.ntuzy.memento.game;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+// 守护者对象 保存游戏角色的状态
+public class Caretaker {
+    private Memento memento;
+
+    // 对GameRole 保存很多次的状态
+//    private ArrayList<Memento> mementos;
+    // 多个游戏角色有多个状态
+//    private HashMap<String,ArrayList<Memento>> roleMementos = new HashMap<>();
 
 
+    public Caretaker() {
+    }
 
+    public Caretaker(Memento memento) {
+        this.memento = memento;
+    }
 
+    public Memento getMemento() {
+        return memento;
+    }
+
+    public void setMemento(Memento memento) {
+        this.memento = memento;
+    }
+}
+
+```
+
+### Memento
+
+```java
+package com.ntuzy.memento.game;
+
+public class Memento {
+    private int vit;
+    private int def;
+
+    public Memento(int vit, int def) {
+        this.vit = vit;
+        this.def = def;
+    }
+
+    public int getVit() {
+        return vit;
+    }
+
+    public void setVit(int vit) {
+        this.vit = vit;
+    }
+
+    public int getDef() {
+        return def;
+    }
+
+    public void setDef(int def) {
+        this.def = def;
+    }
+}
+
+```
+
+### GameRole
+
+```java
+package com.ntuzy.memento.game;
+
+public class GameRole {
+    private int vit;
+    private int def;
+
+    public Memento createMemento() {
+        return new Memento(vit, def);
+    }
+
+    // 从备忘录对象恢复对象
+    public void recoverGameRoleFromMemento(Memento memento) {
+        this.vit = memento.getVit();
+        this.def = memento.getDef();
+    }
+
+    public void display() {
+        System.out.println("vit = " + this.vit + ", def = " + this.def);
+    }
+
+    public int getVit() {
+        return vit;
+    }
+
+    public void setVit(int vit) {
+        this.vit = vit;
+    }
+
+    public int getDef() {
+        return def;
+    }
+
+    public void setDef(int def) {
+        this.def = def;
+    }
+}
+
+```
 
 
 
