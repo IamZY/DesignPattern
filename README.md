@@ -1632,7 +1632,99 @@ public class RemoteController {
 + Element 定义一个accept方法，接受一个访问者对象
 + ConcreteElement 为具体元素，实现了accept方法
 
+## 迭代器模式
 
++ `iterator` 迭代器接口，是系统提供的含义 hasNext next remove
++ `ConcreteIterator` 具体的迭代器 管理迭代
++ `Aggregate` 一个统一的聚合接口 将客户端和具体的聚合解耦
++ `ConcreteAggreage` 具体的聚合持有对象集合并提供一个方法 返回一个迭代器，改迭代器可以正确遍历集合
++ Client 客户端 通过Iterator和Aggregate依赖子类
+
+### 代码
+
++ ComputerCollege
+
+  ```java
+  package com.ntuzy.iterator;
+  
+  import java.util.Iterator;
+  
+  public class ComputerCollege implements College {
+  
+      Department[] departments;
+      int numOfDepartments = 0; // 保存当前数组对象个数
+  
+      public ComputerCollege() {
+          departments = new Department[5];
+          addDepartment("Java","Java");
+          addDepartment("Php","Php");
+          addDepartment("大数据","大数据");
+      }
+  
+      @Override
+      public String getName() {
+          return "计算机学院";
+      }
+  
+      @Override
+      public void addDepartment(String name, String desc) {
+  //        departments = new Department[5];
+          Department department = new Department(name, desc);
+          departments[numOfDepartments] = department;
+          numOfDepartments++;
+      }
+  
+      @Override
+      public Iterator createIterator() {
+          return new ComputerCollegeIterator(departments);
+      }
+  }
+  
+  ```
+
++ ComputerCollegeIterator
+
+  ```java
+  package com.ntuzy.iterator;
+  
+  import java.util.Iterator;
+  
+  public class ComputerCollegeIterator implements Iterator {
+  
+      // 这里我们需要知道Department是怎样存放的
+      Department[] departments;
+      int position = 0;  // 遍历的位置
+  
+  
+      public ComputerCollegeIterator(Department[] departments) {
+          this.departments = departments;
+      }
+  
+      // 判断是否还有下一个元素
+      @Override
+      public boolean hasNext() {
+          if (position >= departments.length || departments[position] == null) {
+              return false;
+          }
+  
+          return true;
+      }
+  
+  
+      @Override
+      public Object next() {
+          Department department = departments[position];
+          position++;
+          return department;
+      }
+  
+      // 删除的方法默认空实现
+      public void remove() {
+  
+      }
+  
+  }
+  ```
 
 
 

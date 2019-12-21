@@ -1,5 +1,7 @@
 package com.ntuzy.visitor;
 
+import java.util.Vector;
+
 public class Client {
     public static void main(String[] args){
         // 创建ObjectStructure
@@ -13,6 +15,8 @@ public class Client {
 
         Fail fail = new Fail();
         objectStructure.display(fail);
+
+//        Vector
 
     }
 }
