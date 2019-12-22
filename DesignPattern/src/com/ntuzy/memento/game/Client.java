@@ -1,6 +1,7 @@
 package com.ntuzy.memento.game;
 
 public class Client {
+
     public static void main(String[] args){
         GameRole gameRole = new GameRole();
         gameRole.setVit(100);
