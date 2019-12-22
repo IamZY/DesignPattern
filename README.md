@@ -2106,7 +2106,89 @@ public class GameRole {
   }
   ```
 
-  
+## 状态模式
+
+解决对象在多种状态转换时，需要对外输出不同的行为的问题，状态和行为是一一对应的，状态之间可以相互转换
+
++ context 环境角色
++ State 抽象状态角色
++ `ConcreteState` 具体的状态角色
+
+### Context
+
+```java
+package com.ntuzy.state;
+
+public class Context {
+
+    private State state;
+
+    public Context() {
+        this.state = null;
+    }
+
+    public State getState() {
+        return state;
+    }
+
+    public void setState(State state) {
+        this.state = state;
+    }
+}
+```
+
+### State
+
+```java
+package com.ntuzy.state;
+
+public interface State {
+    public void doAction(Context context);
+}
+
+```
+
+### StartState
+
+```java
+package com.ntuzy.state;
+
+public class StartState implements State {
+    @Override
+    public void doAction(Context context) {
+        System.out.println("Player is in start state");
+        context.setState(this);
+    }
+
+    public String toString(){
+        return "Start State";
+    }
+}
+
+```
+
+### Client
+
+```java
+package com.ntuzy.state;
+
+public class Client {
+    public static void main(String[] args) {
+        Context context = new Context();
+
+        StartState startState = new StartState();
+        startState.doAction(context);
+
+        System.out.println(context.getState().toString());
+
+        StopState stopState = new StopState();
+        stopState.doAction(context);
+
+        System.out.println(context.getState().toString());
+    }
+}
+
+```
 
 
 
