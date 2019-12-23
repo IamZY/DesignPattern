@@ -2261,11 +2261,126 @@ public class Client {
 // 1 - 5 = -4
 ```
 
+## 职责链模式
 
+顾名思义，责任链模式（Chain of Responsibility Pattern）为请求创建了一个接收者对象的链。这种模式给予请求的类型，对请求的发送者和接收者进行解耦。这种类型的设计模式属于行为型模式。
 
+在这种模式中，通常每个接收者都包含对另一个接收者的引用。如果一个对象不能处理该请求，那么它会把相同的请求传给下一个接收者，依此类推。
 
+Handler 里面聚合它自己，在 HandlerRequest 里判断是否合适，如果没达到条件则向下传递，向谁传递之前 set 进去。
 
+### PurchaseRequest
 
+```java
+package com.ntuzy.responsibilitychain;
+
+// 请求类
+public class PurchaseRequest {
+
+    private int type = 0;   // 请求类型
+    private float price = 0.0f;
+    private int id = 0;
+
+    public PurchaseRequest(int type, float price, int id) {
+        this.type = type;
+        this.price = price;
+        this.id = id;
+    }
+
+    public int getType() {
+        return type;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+
+    public int getId() {
+        return id;
+    }
+}
+
+```
+
+### Approver
+
+```java
+package com.ntuzy.responsibilitychain;
+
+public abstract class Approver {
+
+    Approver approver; // 下一个处理着
+    String name;  // 名字
+
+    public Approver(String name) {
+        this.name = name;
+    }
+
+    // 下一个处理者
+    public void setApprover(Approver approver) {
+        this.approver = approver;
+    }
+
+    // 处理审批请求的方法 得到一个请求 处理子类完成 因此该方法做成抽象
+    public abstract void processRequest(PurchaseRequest purchaseRequest);
+
+}
+```
+
+### CollegeApprover
+
+```java
+package com.ntuzy.responsibilitychain;
+
+public class CollegeApprover extends Approver {
+    public CollegeApprover(String name) {
+        super(name);
+    }
+
+    @Override
+    public void processRequest(PurchaseRequest purchaseRequest) {
+        if (purchaseRequest.getPrice() > 5000 && purchaseRequest.getPrice() <= 10000) {
+            System.out.println(" 请求编号 id = " + purchaseRequest.getId() + " 被 " + this.name + "处理");
+        } else {
+            approver.processRequest(purchaseRequest);
+        }
+    }
+}
+
+```
+
+### Client
+
+```java
+package com.ntuzy.responsibilitychain;
+
+public class Client {
+    public static void main(String[] args){
+        PurchaseRequest purchaseRequest = new PurchaseRequest(1, 5000, 1);
+
+        // 创建相关的审批人
+        DepartmentApprover departmentApprover = new DepartmentApprover("主任");
+        CollegeApprover collegeApprover = new CollegeApprover("院长");
+        ViceSchoolMasterApprover viceSchoolMasterApprover = new ViceSchoolMasterApprover("副校长");
+        SchoolMasterApprover schoolMasterApprover = new SchoolMasterApprover("校长");
+
+        // 将各个审批级别下一个人处理 (处理人构成环形) 确认任意人处理都可以正常执行
+        // 否则只能从开头进行
+        departmentApprover.setApprover(collegeApprover);
+        collegeApprover.setApprover(viceSchoolMasterApprover);
+        viceSchoolMasterApprover.setApprover(schoolMasterApprover);
+        schoolMasterApprover.setApprover(departmentApprover);
+
+        departmentApprover.processRequest(purchaseRequest);
+
+        schoolMasterApprover.processRequest(purchaseRequest);
+
+    }
+}
+
+// 请求编号 id = 1 被 主任处理
+// 请求编号 id = 1 被 主任处理
+```
 
 
 
